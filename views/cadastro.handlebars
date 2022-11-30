@@ -1,0 +1,84 @@
+{{#if erro}}
+    <p class="text-danger d-flex justify-content-center">{{mensagem}}</p>
+
+{{/if}}
+
+    <main>
+        <section class="container align-items-center">
+            <form action="/enviar-cadastro" method="post">
+
+                <!-- section geral de todo os dados. --> 
+                <section id="dadosPessoais">
+                    <p>(*) Campos Obrigatórios </p>
+    
+                    <!-- div de dados iniciais --> 
+                    <div>
+                        <div class="">
+                            
+                            
+                                
+                            <div class="">
+                                <label for="name">Nome: *</label>
+                                <input name="nome" type="text" id="name" placeholder="EX: Frederico Josefino da silva lima" required data-input-nome-registro >
+                            </div>
+
+                            <div class="">
+                                <label for="surname">Sobrenome: *</label>
+                                <input name="sobrenome" type="text" id="sobrenome">
+                            </div>
+                                
+                            <div class="">
+                                <label for="mail" class="mr-4">E-mail: *</label>
+                                <input name="email" type="email" id="mail" required placeholder="Crie seu email de acesso" class="ml-5">
+                            </div>
+
+                            <div class="">    
+                                <label for="senha">Senha de acesso: *</label>
+                                <input name="senha" type="password" id="senha" required placeholder="Crie sua senha de acesso" minlength="8">
+                            </div>
+
+                            <div class="">
+                                <label for="cpf" class="mr-5" >CPF *</label>
+                                <input name="cpf" type="text" id="cpf" class="ml-5" required>
+                            </div>  
+
+                        </div>
+        
+                    
+                        
+                        <div>
+                            <hr>
+                            <P>Endereço</P>
+                            
+                            <div>
+                                
+                                <label type="cep" class="mr-5 pr-1">CEP*</label>
+                                <input name="cep" type="text" id="cep" data-tipo="logradouro" class="ml-5" required><br>
+                                <label type="rua" class="mr-5">Rua *</label>
+                                <input name="rua" type="text" id="rua" data-tipo="logradouro" class="ml-5" required><br>
+                                <label type="numero" class="pr-0">Número da casa</label>
+                                <input name="numero" type="text" id="numero" data-tipo="numero" class="ml-3"><br>
+                                <label type="bairro" class="pr-3 mr-3">Bairro *</label>
+                                <input name="bairro" type="text" id="bairro" data-tipo="bairro" class="ml-5" onchange required><br>
+                                <label type="cidade" class="mr-4">Cidade *</label>
+                                <input name="cidade" type="text" id="cidade" data-tipo="cidade" class="ml-5" required><br>
+                                <label type="estado" class="mr-4">Estado *</label>
+                                <input name="estado" type="text" id="estado" class="ml-5" required><br>
+                                
+                            </div>
+        
+                        </div>
+                        
+                    
+                        
+        
+                        <div>
+                            <input type="submit" class="btn btn-info">
+                        </div>
+        
+                
+                    </div>
+                </section>
+            </form>
+        </section>
+    </main>

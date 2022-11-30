@@ -1,0 +1,40 @@
+<form action="/modificar" method="post">
+<div class="d-flex justify-content-lg-center align-items-center">
+        <div class="">
+        
+            
+                <img class="rounded-circle mr-5" width="150px" src="https://st3.depositphotos.com/15648834/17930/v/600/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg">
+                
+                <div>
+                    <span class="font-weight-bold">{{nomePessoaLogada}}</span>
+                </div>
+                <div>
+                    <span class="text-black-50">{{emailPessoaLogada}}</span>
+                </div>
+                
+            
+        </div>
+        <div class="col-md-5">
+            <div class="p-3 py-5">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h4 class="text-right">Editar Perfil</h4>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-md-6"><label class="labels">NOME</label><input name="nome" type="text" class="form-control" placeholder="Nome" value="{{nomePessoaLogada}}"></div>
+                    <div class="col-md-6"><label class="labels">SOBRENOME</label><input name="sobrenome" type="text" class="form-control" value="{{sobrenome}}" placeholder="Sobrenome"></div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-12"><label class="labels">CPF</label><input name="cpf" type="text" class="form-control" placeholder="Cpf" value="{{cpf}}" disabled></div>
+                    <div class="col-md-12"><label class="labels">ENDEREÇO</label><input name="endereco" type="text" class="form-control" placeholder="Endereço" value="{{endereco}}"disabled></div>
+                    <div class="col-md-12"><label class="labels">CEP</label><input name="cep" type="text" class="form-control" placeholder="Cep" value="{{cep}}"disabled></div>
+                    <div class="col-md-12"><label class="labels">EMAIL</label><input name="email" type="email" class="form-control" placeholder="Email" value="{{emailPessoaLogada}}"></div>
+                </div>
+                
+                
+            </div>
+        </div>
+        <div class="">
+        <button class="btn btn-info" type="submit">Modificar</button></div>
+    </div>
+</div>
+</form>

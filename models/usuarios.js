@@ -17,6 +17,10 @@ const tabelaUsuarios = BancoDeDados.define('users',{
         type: Sequelize.STRING,
         allowNull: false
     },
+    sobrenome:{
+        type: Sequelize.STRING,
+        allowNull: false
+    },
     email:{
         type: Sequelize.STRING,
         allowNull: false
@@ -25,30 +29,30 @@ const tabelaUsuarios = BancoDeDados.define('users',{
         type: Sequelize.STRING,
         allowNull: false
     },
-    cep:{
-         type: Sequelize.STRING,
-         allowNull: false
- },
-    rua:{
-         type: Sequelize.STRING,
-         allowNull: false
-     },
-     numero:{
-         type: Sequelize.STRING,
-         allowNull: false
-     },
-     bairro:{
-         type: Sequelize.STRING,
-         allowNull: false
-     },
-     cidade:{
-         type: Sequelize.STRING,
-         allowNull: false
-     },
-     estado:{
-         type: Sequelize.STRING,
-         allowNull: false
-     }
+     cep:{
+          type: Sequelize.STRING,
+          allowNull: false
+    },
+     rua:{
+          type: Sequelize.STRING,
+          allowNull: false
+      },
+      numero:{
+          type: Sequelize.STRING,
+          allowNull: false
+      },
+      bairro:{
+          type: Sequelize.STRING,
+          allowNull: false
+      },
+      cidade:{
+          type: Sequelize.STRING,
+          allowNull: false
+      },
+      estado:{
+          type: Sequelize.STRING,
+          allowNull: false
+      }
 
 });
 

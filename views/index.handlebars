@@ -1,0 +1,36 @@
+ 
+<main>
+    <form action="/logar" method="post">
+  <section class="login d-flex justify-content-center mt-2 mb-2">
+  
+  <article class="login-secao p-2 w-80 m-2">
+        <img src="https://i.imgur.com/DRIAidC.gif">
+      <h1 class="text-center mb-4">Entrar</h1>
+      <div>
+          <label for="Email">Digite seu E-mail</label><br>
+          <input name="email" type="email" id="Email" placeholder="seuemail@email.com" class="w-100" required>
+      </div>
+      <div>
+          <label for="senha">Digite sua senha</label><br>
+          <input name="senha" type="password" id="senha" placeholder="*****" class="w-100" required>
+      </div>
+      <div>
+          <input type="checkbox" name="dados">
+          <label for="dados">Lembrar meus dados</label>
+          <br><br>
+          <a href="recupSenha.html" >Esqueceu usuário ou senha?</a>
+          <br><br>
+          <div>
+              <button type="submit" class="btn btn-primary w-100 mb-3">
+                  Entrar
+              </button> 
+              <a class="btn btn-primary w-100" href="/cadastrar">
+                  Cadastrar
+              </a> 
+          </div>
+        </div>
+    </article>
+  </section>
+  </form>
+</main>
+
